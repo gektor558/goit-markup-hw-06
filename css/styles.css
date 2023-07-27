@@ -585,7 +585,7 @@ img {
 .modal-field-wrap {
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -610,6 +610,10 @@ img {
     outline: transparent;
     transition-property: border-color;
     transition: border-color var(--transition-dur) var(--transition-function);
+}
+
+.modal-input:focus + .modal-icon {
+    fill: var(--iris);
 }
 
 
@@ -721,6 +725,8 @@ img {
     border: none;
     fill: var(--cloud);
 }
+
+.input-
 
 .send-button {
     display: block;
