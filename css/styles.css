@@ -585,7 +585,7 @@ img {
 .modal-field-wrap {
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
@@ -701,7 +701,7 @@ img {
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: background-color var(--transition-dur) var(--transition-function), border var(--transition-dur) var(--transition-function), var(--transition-dur) var(--transition-function);
+    transition: background-color var(--transition-dur) var(--transition-function), border var(--transition-dur) var(--transition-function), fill var(--transition-dur) var(--transition-function);
 }
 
 .checkbox-label {
