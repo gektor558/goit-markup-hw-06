@@ -726,9 +726,8 @@ img {
     fill: var(--cloud);
 }
 
-.input-
 
-.send-button {
+.send-button-modal {
     display: block;
     min-width: 169px;
     height: 56px;
