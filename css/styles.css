@@ -657,6 +657,10 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-field-wrap-comment {
+  margin-bottom: 16px;
+}
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
@@ -700,7 +704,6 @@ img {
 
 .modal-icon-wrap {
   position: relative;
-  /* margin-top: 4px; */
 }
 
 .modal-icon {
