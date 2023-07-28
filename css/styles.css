@@ -506,6 +506,15 @@ img {
   gap: 24px;
 }
 
+.footer-form-container {
+  padding-left: 80px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 
 .footer-input {
   width: 264px;
@@ -519,14 +528,13 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white);
-
 }
 
 #placeholder {
   color: var(--white);
 }
 
-.subscribe-button {
+.subscribebtn {
   min-width: 165px;
   height: 40px; 
   display: flex; 
