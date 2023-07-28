@@ -553,8 +553,15 @@ img {
 }
 
 .footer-subscribe-icon {
+  fill: var(--white);
   margin-left: 16px;
 }
+
+.subscribebtn:focus,
+.subscribebtn:hover {
+  background-color: var(--ocean);
+}
+
 
 /*================== Modal ==================*/
 
@@ -647,8 +654,6 @@ img {
 }
 
 .modal-field-wrap {
-  margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 16px;
 }
 
@@ -761,6 +766,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -780,7 +786,7 @@ img {
   visibility: hidden;
 }
 
-.input-checkbox:checked + .checkbox-span{
+.input-checkbox:checked + .checkbox-label > .checkbox-span{
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
@@ -789,6 +795,8 @@ img {
 
 .send-button-modal {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
