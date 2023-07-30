@@ -8,20 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header-section">
@@ -58,6 +52,16 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="hamburger-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -136,6 +140,10 @@
             <li class="aboutus-item">
               <img
                 class="img"
+                srcset="
+                  ./images/What-do-we-do/img1.jpg     1x,
+                  ./images/What-do-we-do/img1-2x.jpeg 2x
+                "
                 src="./images/What-do-we-do/img1.jpg"
                 alt="computer analyzing"
                 width="360"
@@ -145,6 +153,10 @@
             <li class="aboutus-item">
               <img
                 class="img"
+                srcset="
+                  ./images/What-do-we-do/img2.jpg     1x,
+                  ./images/What-do-we-do/img2-2x.jpeg 2x
+                "
                 src="./images/What-do-we-do/img2.jpg"
                 alt="phone chat layers"
                 width="360"
@@ -154,6 +166,10 @@
             <li class="aboutus-item">
               <img
                 class="img"
+                srcset="
+                  ./images/What-do-we-do/img3.jpg     1x,
+                  ./images/What-do-we-do/img3-2x.jpeg 2x
+                "
                 src="./images/What-do-we-do/img3.jpg"
                 alt="man hodling a phone"
                 width="360"
@@ -164,7 +180,7 @@
         </div>
       </section>
       <!--Section4-->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="aboutus-team">Our Team</h2>
           <ul class="sectionfour-list list">
@@ -340,11 +356,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--================ Section 5 ===============S-->
 
-      <section class="customers-section">
+      <!-- <section class="customers-section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -392,9 +408,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="logo-container">
           <a href="./index.html" class="logo-bottom logo link"
@@ -460,8 +476,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="modal is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="modal is-hidden" data-modal>
       <div class="backdrop">
         <button type="button" class="close-backdrop" data-modal-close>
           <svg class="cross" width="8" height="8">
@@ -547,7 +563,40 @@
           <button type="submit" class="send-button-modal">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
   </body>
 </html>
